@@ -1,4 +1,4 @@
-    const INITIAL_VELOCITY = .025
+    const INITIAL_VELOCITY = .030
     const VELOCITY_INCREACE = .000001
 export default class Ball{
     constructor(ballElement) {
@@ -37,7 +37,7 @@ export default class Ball{
         this.velocity = INITIAL_VELOCITY
 
     }
-    
+
 
     update(delta,paddleRects) {
         this.x += this.direction.x * this.velocity * delta

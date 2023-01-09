@@ -25,7 +25,7 @@ body {
     background-color: var(--foreground-color);
 
     width: 1.5vh;
-    height: 10vh;
+    height: 12vh;
     transform: translateY(-50%);
 }
 .paddle.left {

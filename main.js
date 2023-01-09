@@ -2,7 +2,6 @@ import Ball from './ball.js'
 import Paddle from './paddle.js'
 
 const ball = new Ball(document.getElementById("ball"))
-//update loop
 const playerPaddle = new Paddle(document.querySelector("#player-paddle"))
 const computerPaddle = new Paddle(document.getElementById("computer-paddle"))
 const playerScoreElement = document.querySelector('.player-score')
@@ -19,12 +18,8 @@ function update(time) {
         if(isLost())handleLose()
     }
 
-
- 
     lastTime = time
     window.requestAnimationFrame(update)
-
-
 
 }
 
